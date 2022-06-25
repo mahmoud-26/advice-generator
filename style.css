@@ -34,14 +34,20 @@ body {
   font-size: 11px;
   letter-spacing: 3px;
   padding: 10px 0;
+  user-select: none;
 }
 .card-content {
   color: var(--light-cyan);
   font-size: 23px;
 }
+.card-content::selection {
+  color: #000000;
+  background-color: var(--neon-green);
+}
 .divider {
   width: 99%;
   margin: 30px 5px 40px 0;
+  user-select: none;
 }
 .dice-div {
   width: 60px;
@@ -55,6 +61,7 @@ body {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  user-select: none;
 }
 .dice-div:active {
   box-shadow: 0 0 10px 0 var(--neon-green);
